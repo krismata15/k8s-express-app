@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: express-app
-        image: krismata12/express-app:2.0.0
+        image: krismata12/express-app:3.0.0
         ports:
         - containerPort: 3000

@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const version = "2.0.0";
+const version = "3.0.0";
 
 // In-memory data store (for simplicity)
 let users = [
@@ -40,6 +40,10 @@ app.get("/users", (req, res) => {
 
 app.get("/", (req, res) => {
   res.send(`Test program for test k8s Version: ${version}`);
+});
+
+app.get("/healthcheck", (req, res) => {
+  res.send(`This healthcheck rute is okey and version is: ${version}`);
 });
 
 app.listen(port, () => {
