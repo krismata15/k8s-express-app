@@ -21,4 +21,4 @@ kubectl apply -f service.yaml
 minikube tunnel
 ```
 
-- Check if service es running in the right port
+- Check if service is running on the right port
