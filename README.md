@@ -1,4 +1,4 @@
-# Paso test k8s:
+# Steps to test k8s:
 
 - Install docker
 - Install minikube
